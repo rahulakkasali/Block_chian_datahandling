@@ -38,6 +38,55 @@ Keys decide access.**
 🚫 No central database  
 🧪 Fully runnable demo using Python  
 
+
+
+---
+
+## 🔁 Workflow (End-to-End)
+
+1️⃣ User creates a decentralized identity  
+2️⃣ Blockchain (ledger) is initialized  
+3️⃣ User uploads a file:
+   - File is encrypted locally
+   - Encrypted file stored off-chain
+   - Blockchain records:
+     - File hash
+     - Owner
+     - Access permissions
+4️⃣ Other users attempt access:
+   - Blockchain checks permission
+   - Allowed users decrypt and view file
+   - Unauthorized users are denied
+
+---
+
+## 🧪 Demo Scenario
+
+Example users: **A, B, C, D**
+
+- **B uploads a video**
+- **B allows access only to C**
+- Results:
+
+| User | Access |
+|----|----|
+| B | ✅ Allowed |
+| C | ✅ Allowed |
+| A | ❌ Denied |
+| D | ❌ Denied |
+
+Even though all users have the encrypted file, **only permitted users can view it**.
+
+---
+
+## 🗂️ Project Structure
+
+
+
+
+
+
+
 ---
 
 ## 🧱 System Architecture
